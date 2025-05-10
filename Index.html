@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Comshop ni Zennon</title>
+</head>
+<body>
+    <main>
+
+        <header>
+            <img src="zs.png" height="70px">
+            <div class="search-container">
+            <input type="search" placeholder="Enter Your Product Name...">
+            </div>
+            <div>
+            <i class="fa-regular fa-user" onclick="login()"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+
+        <nav>
+            <a>Home</a> 
+            <a href="pricelist.html">Pricelist</a> 
+            <a>Settings</a>
+        </nav>
+
+        <div class="image-area">
+            <div class="image-container">
+                <img src="pc1.jpg">
+            </div>
+            <div class="image-content">
+                <h2>Welcome Kupal sa Comshop Ko</h2>
+                <p>Kung saan wala ang hinahanap mo</p>
+                <br>
+                <button onclick="login()">Get Started</button>
+            </div>
+            </div>
+
+        <div class = "modal-container" id="modal-container">
+        <div id ="login" class="animate__animated animate__fadeInDown">
+            <span class="close" onclick="closelogin()">×</span>
+            <div class="login-logo">
+            <img src="zs3.png" width="20%">
+            <h5>ComshopQouh</h5>
+            </div>
+            <h4>Sign in with email</h4>
+            <p>Para makamit mo na dream pc mo boi</p>
+            
+            <div class="input-container">
+                <div class="input-box">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+
+            <p style="color: black; margin-top: 10px; text-align: right; font-weight: 900;">Forgot Password?</p>
+            <button>Sign Up</button>
+            <br>
+            <p style="margin: 0; color: black; font-size: 14px;">----------- Or sign in with -----------</p>
+
+            <div class="login-method">
+
+                <div class="container1">
+                    <img src="google.png" alt="">
+                </div>
+
+                <div class="container2">
+                    <img src="facebook.png" alt="">
+                </div>
+
+                <div class="container3">
+                    <img src="apple.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="zs3.png" width="10%">
+                <p>ComshopQouh</p>
+
+                <div class="footer-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                </div>
+            </div>
+
+            <div class="footer-mid">
+                <div class="mid1">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li>Home</li>
+                        <li>Pricelist</li>
+                        <li>Settings</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+
+                <div class="mid2">
+                    <h5>Contact Us</h5>
+                    <div class="contact-container">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Blk 4 Lot 14 Pheasant St. Amaris Homes Molino 4 Bacoor Cavite</p>
+                    </div>
+                    <div class="contact-container">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0123456789</p>
+                    </div>
+                    <div class="contact-container">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p>ZennonGwapo@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="mid3">
+                    <h5>Remain Updated</h5>
+                    <input type="text" placeholder="Your Email Address">
+                    <button>Submit</button>
+                </div>
+            </div>
+
+            <hr>
+            <p style="color: white; font-size:medium; font-weight: bolder;">@2025 All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>

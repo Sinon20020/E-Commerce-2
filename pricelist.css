@@ -1,0 +1,77 @@
+.main{
+    padding: 2% 5%;
+    display: flex;
+    gap: 2%;
+}
+.filter-container{
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    width: 25%;
+    padding: 0 2%;
+}
+
+.filter-container ul{
+    list-style: none;
+}
+
+.filter-container li{
+    margin-bottom: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-container li:hover{
+    color: #0808a8;
+    font-weight: 900;
+}
+
+.products-container{
+    width: 100%;
+    margin-top: -35px;
+}
+.products-container hr{
+    margin-top: -20px;
+}
+
+.select-price, .select-stocks{
+    padding: 0.7%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.select-price, .select-stocks{
+    background-color: #06202B;
+    color: white;
+}
+
+.select-price option, .select-stocks option{
+    background-color: white;
+    color: black;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards > div{
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+}
+
+.card1{
+    border: 2px solid #06202B;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+}
+
+.card1:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
