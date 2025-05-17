@@ -10,13 +10,23 @@
 </head>
 <body>
     <header>
-        <img src="zs.png" height="70px">
-        <input type="search" placeholder="Enter Your Product Name...">
-        <div>
+    <img src="assests/zs.png" height="70px">
+    <input type="search" placeholder="Enter Your Product Name...">
+    <div>
         <i class="fa-regular fa-user"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </header>
+
+        <div class="icon-wrapper">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <div class="cart-container">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div> 
+        <button>View My Shopping Cart</button>
+    </div>
+</div>
+
+    </div>
+</header>
+
 
     <nav>
         <a href="index.html">Home</a> 
@@ -63,25 +73,25 @@
 
         <div class="cards">
 
-            <div class="card1">
-                <p>Ryzen 5 5500</p>
-                <img src="https://dc-gamingcomputers.com/admin/assets/img/R5%205500%20v23.png" width="100%">
+            <div class="card1" onclick="openItem(this)">
+                <p class="item-name">Ryzen 5 5500</p>
+                <img src="https://dc-gamingcomputers.com/admin/assets/img/R5%205500%20v23.png" width="100%" class="item-img">
                 <div class = "card-info">
-                    <p>₱5,500</p>
-                    <p style="color: green">On Stock</p>
+                    <p class="item-price">₱5,500</p>
+                    <p style="color: green" class="item-status">On Stock</p>
                 </div>
             </div>
 
-            <div class="card1">
-                <p>Ryzen 7 5700G</p>
-                <img src="	https://dc-gamingcomputers.com/admin/assets/img/R7%205700g.png" width="100%">
+            <div class="card1" onclick="openItem(this)">
+                <p class="item-name">Ryzen 7 5700G</p>
+                <img src="	https://dc-gamingcomputers.com/admin/assets/img/R7%205700g.png" width="100%" class="item-img">
                 <div class = "card-info">
-                    <p>₱8,260</p>
-                    <p style="color: green">On Stock</p>
+                    <p class="item-price">₱8,260</p>
+                    <p style="color: green" class="item-status">On Stock</p>
                 </div>
             </div>
 
-            <div class="card1">
+            <div class="card1" onclick="openItem(this)">
                 <p>Ryzen 5 2400GE</p>
                 <img src="	https://dc-gamingcomputers.com/admin/assets/img/R5%202400ge.png" width="100%">
                 <div class = "card-info">
@@ -137,5 +147,37 @@
         </div>
     </div>
     </div>
+
+    <div class="item-modal-container" id = "item-modal-container">
+        <div class="item-modal-content">
+            <span class="close" onclick="closeItem()">×</span>
+
+        <div class="item-modal-img-container">
+        <img class="target-img" width="85%" onclick="swap()" id="image1">
+        <div class="sub-img">
+        <img src="https://www.proshop.no/Images/915x900/3257136_a0c11d714fa6.jpg" width="20%" onclick="swap()" id="image2">
+        <img src="https://ph-live-01.slatic.net/p/7d2b9bc665cc79d7fd8b466ceb736d0f.png" width="20%" onclick="swap()" id="image2">
+        </div>
+        </div>
+
+        <div class="item-modal-details">
+        <h5 class="target-name"></h5>
+        <p class="target-price"></p>
+        <p class="target-status" style="color: green; font-weight: 900;"></p>
+
+        <br>
+         <div class="item-modal-controls">
+            <select class="quantity">
+                <option disabled selected>1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+            </select>
+            <button onclick="addCart(this)">Add To Cart</button>            
+        </div>
+        </div>
+
+        </div>
+    </div>
+<script src="pricelist.js"></script>
 </body>
 </html>
